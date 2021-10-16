@@ -13,7 +13,7 @@
 }
 
 .descriptionBlock {
-  @apply flex-1 max-w-4xl;
+  @apply flex-1 max-w-4xl pl-7;
 }
 
 .description {

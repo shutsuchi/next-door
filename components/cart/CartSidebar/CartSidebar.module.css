@@ -1,0 +1,90 @@
+.cartSidebarRoot {
+  @apply h-full flex flex-col;
+}
+
+.secondaryColor {
+  @apply bg-secondary text-secondary;
+}
+
+.headerContainer {
+  @apply px-4 pt-6 pb-4
+         sm:px-6;
+}
+
+.buttonWrap {
+  @apply flex items-start justify-between space-x-3;
+}
+
+.buttonBlock {
+  @apply h-7 flex items-center;
+}
+
+.button {
+  @apply transition ease-in-out duration-150
+         hover:text-gray-500;
+}
+
+.crossIcon {
+  @apply h-6 w-6;
+}
+
+.emptyBlock {
+  @apply flex-1 px-4 flex flex-col justify-center items-center;
+}
+
+.logoBlock {
+  @apply border border-dashed border-primary rounded-full flex
+         items-center justify-center w-16 h-16 p-12 bg-secondary text-secondary;
+}
+
+.logo {
+  @apply absolute;
+}
+
+.emptyMessage {
+  @apply pt-6 text-2xl font-bold tracking-wide text-center;
+}
+
+.emptySubMessage {
+  @apply text-accents-3 px-10 text-center pt-2;
+}
+
+.titleBlock {
+  @apply px-4 flex-1
+         sm:px-6;
+}
+
+.title {
+  @apply pt-1 pb-4 text-2xl leading-7 font-bold text-base
+         tracking-wide inline-block;
+}
+
+.subtitle {
+  @apply py-6 space-y-6 border-t border-accents-3
+         sm:py-0 sm:space-y-0 sm:divide-y sm:divide-accents-3 ;
+}
+
+.contentWrap {
+  @apply flex-shrink-0 px-4 py-5
+         sm:px-6;
+}
+
+.contentBlock {
+  @apply border-t border-accents-3;
+}
+
+.contentList {
+  @apply py-3;
+}
+
+.contentItem {
+  @apply flex justify-between py-1;
+}
+
+.freeText {
+  @apply font-bold tracking-wide;
+}
+
+.totalCost {
+  @apply flex justify-between border-t border-accents-3 py-3 font-bold mb-10;
+}

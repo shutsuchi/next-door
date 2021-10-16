@@ -1,0 +1,29 @@
+.wishlistRoot {
+  @apply mt-3 mb-20;
+}
+
+.wishlistContainer {
+  @apply group flex flex-col;
+}
+
+.emptyBlock {
+  @apply flex-1 px-12 py-24 flex flex-col justify-center items-center;
+}
+
+.logoBlock {
+  @apply border border-dashed border-secondary flex
+         items-center justify-center w-16 h-16 bg-primary
+         p-12 rounded-lg text-primary;
+}
+
+.logo {
+  @apply absolute;
+}
+
+.emptyMessage {
+  @apply pt-6 text-2xl font-bold tracking-wide text-center;
+}
+
+.emptySubMessage {
+  @apply text-accents-6 px-10 text-center pt-2;
+}
