@@ -1,0 +1,19 @@
+.footerRoot {
+  @apply bg-black pt-1;
+}
+
+.footerContainer {
+  @apply container mx-auto px-6;
+}
+
+.itemContainer {
+  @apply mt-5 flex flex-col items-center;
+}
+
+.itemBlock {
+  @apply py-6;
+}
+
+.item {
+  @apply mb-6 text-sm text-primary-2 font-bold;
+}

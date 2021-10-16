@@ -21,6 +21,18 @@
   }
 }
 
+.productNameBlock {
+  @apply inset-0 flex items-center justify-center absolute z-20;
+}
+
+.productName {
+  @apply bg-black text-white p-3 font-bold text-xl;
+}
+
+.productNameSecondary {
+  @apply bg-gray-300 text-black p-3 font-bold text-xl;
+}
+
 .productImage {
   @apply transition-transform duration-500 block;
 }
