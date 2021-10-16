@@ -1,13 +1,14 @@
 import s from './Layout.module.css';
+
 import { FC } from 'react';
+import { Footer, Navbar } from '@components/common';
 
 const Layout: FC = ({ children }) => {
-
   return (
     <div className={s.root}>
-      <main className='fit'>
-        {children}
-      </main>
+      <Navbar />
+      <main className='fit'>{children}</main>
+      <Footer />
     </div>
   );
 };
