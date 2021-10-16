@@ -1,5 +1,5 @@
 .navRoot {
-  @apply flex flex-row
+  @apply flex flex-row sticky top-0 z-50
          md:py-6;
 }
 
