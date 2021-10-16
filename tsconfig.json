@@ -23,6 +23,11 @@
       "@assets/*": ["assets/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/product/ProductCard"
+  ],
   "exclude": ["node_modules"]
 }
