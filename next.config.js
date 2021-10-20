@@ -2,13 +2,13 @@ const { withFrameworkConfig } = require('./framework/common/config');
 
 module.exports = withFrameworkConfig({
   framework: {
-    name: "shopify_local"
+    name: process.env.NEXT_PUBLIC_FRAMEWORK,
   },
   reactStrictMode: true,
   i18n: {
-    locales: ["en-US"],
-    defaultLocale: "en-US"
-  }
+    locales: ['en-US'],
+    defaultLocale: 'en-US',
+  },
 });
 
-console.log("next.config.js", JSON.stringify(module.exports, null, 2));
+console.log('next.config.js', JSON.stringify(module.exports, null, 2));

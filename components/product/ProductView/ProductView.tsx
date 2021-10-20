@@ -8,6 +8,7 @@ import { Product } from '@common/types/product';
 import { ProductSlider, Swatch } from '@components/product';
 import { Choices, getVariant } from '../helpers';
 import { useUIContext } from '@components/ui/context';
+import useAddItem from '@framework/cart/use-add-item';
 
 interface ProductViewProps {
   product: Product;
@@ -15,18 +16,22 @@ interface ProductViewProps {
 
 const ProductView: FC<ProductViewProps> = ({ product }) => {
   const [choices, setChoices] = useState<Choices>({});
+
   const { openSidebar } = useUIContext();
+  const addItem = useAddItem();
 
   const variant = getVariant(product, choices);
 
-  const addToCart = () => {
+  const addToCart = async () => {
     try {
       const item = {
         productId: String(product.id),
         variantId: variant?.id,
         variantOptions: variant?.options,
       };
-      alert(JSON.stringify(item));
+      const output = await addItem(item);
+      console.log(JSON.stringify(output, null, 2));
+
       openSidebar();
     } catch (error) {}
   };
